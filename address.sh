@@ -84,7 +84,7 @@ then
 	read -p 'Want to remove[YES/NO] ' rem
 	if [[ $rem == "YES" ]]
 	then
-		sed -i /$str/d player.txt
+		sed -i /"$str"/d player.txt
 	fi
 
 	sort -k 4n player.txt > t1.txt
